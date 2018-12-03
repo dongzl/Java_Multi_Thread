@@ -13,10 +13,12 @@ public class LockSupportTest {
 
     public static void main(String[] args) throws Exception {
         ThreadA ta = new ThreadA("ta");
+        // 获取主线程
         mainThread = Thread.currentThread();
         System.out.println(Thread.currentThread().getName() + " start ta");
         ta.start();
         System.out.println(Thread.currentThread().getName() + " block");
+        // 主线程阻塞
         LockSupport.park(mainThread);
         System.out.println(Thread.currentThread().getName() + " continue");
     }
@@ -29,6 +31,7 @@ public class LockSupportTest {
 
         public void run() {
             System.out.println(Thread.currentThread().getName() + " wakeup others");
+            // 唤醒“主线程”
             LockSupport.unpark(mainThread);
         }
     }
