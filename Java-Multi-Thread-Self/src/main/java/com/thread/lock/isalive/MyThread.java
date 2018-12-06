@@ -9,7 +9,15 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Thread.currentThread().isAlive() = " + Thread.currentThread().isAlive());
-        System.out.println("this.isAlive() = " + this.isAlive());
+        System.out.println(Thread.currentThread().isAlive());
+        System.out.println(this.isAlive());
+    }
+
+    public static void main(String[] args) throws Exception {
+//        MyThread myThread = new MyThread();
+//        myThread.start();
+        MyThread myThread = new MyThread();
+        Thread t1 = new Thread(myThread);
+        t1.start();
     }
 }
