@@ -1,7 +1,7 @@
 package com.multi.thread.chapter1.example20;
 
 /**
- * @Description 
+ * @Description
  * @Author dongzonglei
  * @Date 2018/12/06 下午1:54
  */
