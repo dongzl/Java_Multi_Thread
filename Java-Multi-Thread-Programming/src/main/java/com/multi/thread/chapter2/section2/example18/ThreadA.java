@@ -16,6 +16,7 @@ public class ThreadA extends Thread {
     @Override
     public void run() {
         super.run();
-        service.print(new Object());
+        //service.print(new Object());
+        service.print("AA");
     }
 }
