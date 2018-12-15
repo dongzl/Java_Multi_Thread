@@ -27,6 +27,8 @@ public class NotifyThread extends Thread {
 //            lock.notify();
 //            lock.notify();
 //            lock.notify();
+
+//            lock.notifyAll();
         }
     }
 }
