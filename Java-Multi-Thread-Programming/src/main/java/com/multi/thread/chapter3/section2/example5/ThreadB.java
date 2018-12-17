@@ -8,7 +8,7 @@ package com.multi.thread.chapter3.section2.example5;
 public class ThreadB extends Thread {
 
     @Override
-    public void run() {
+    public synchronized void run() {
         try {
             System.out.println("begin B threadName = " + Thread.currentThread().getName() + " " + System.currentTimeMillis());
             Thread.sleep(5000);
