@@ -22,8 +22,8 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         try {
-            Date dateRef = sdf.parse(dateString);
-            String newDateString = sdf.format(dateRef).toString();
+            Date dateRef = DateTools.parse("yyyy-MM-dd", dateString);
+            String newDateString = DateTools.format("yyyy-MM-dd", dateRef);
             if (!newDateString.equals(dateString)) {
                 System.out.println("ThreadName = " + this.getName() + "报错了，日期字符串：" + dateString + "转换成的日期为：" + newDateString);
             }
