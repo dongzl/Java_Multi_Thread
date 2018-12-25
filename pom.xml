@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
+        <module>Java-High-Concurrency-Programming</module>
         <module>Java-Multi-Thread-Programming</module>
         <module>Java-Multi-Thread-Self</module>
     </modules>
