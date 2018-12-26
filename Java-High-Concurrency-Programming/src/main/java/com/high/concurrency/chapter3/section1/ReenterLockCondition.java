@@ -1,4 +1,4 @@
-package com.high.concurrency.chapter3.section2;
+package com.high.concurrency.chapter3.section1;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
