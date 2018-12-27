@@ -28,6 +28,7 @@ public class LockSupportIntDemo {
                 if (Thread.interrupted()) {
                     System.out.println(getName() + "被中断了");
                 }
+                System.out.println(getName() + "执行结束");
             }
         }
     }
