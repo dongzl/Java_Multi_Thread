@@ -25,6 +25,7 @@ public class CyclicBarrierDemo {
             try {
                 cyclic.await();
                 doWork();
+                cyclic.await();
             } catch (Exception e) {
                 e.printStackTrace();
             }
