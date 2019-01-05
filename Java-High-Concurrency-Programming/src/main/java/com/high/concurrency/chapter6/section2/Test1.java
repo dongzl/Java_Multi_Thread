@@ -35,5 +35,11 @@ public class Test1 {
         Arrays.stream(arr).forEach((x) -> System.out.println(x));
 
         Arrays.stream(arr).forEach(System.out::println);
+
+        IntConsumer outPrintln = System.out::println;
+
+        IntConsumer errPrintln = System.err::println;
+
+        Arrays.stream(arr).forEach(outPrintln.andThen(errPrintln));
     }
 }
