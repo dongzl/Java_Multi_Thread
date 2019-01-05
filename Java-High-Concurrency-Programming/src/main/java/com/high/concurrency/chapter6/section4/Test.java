@@ -29,6 +29,6 @@ public class Test {
         Random random = new Random();
         Arrays.setAll(arr, (i) -> random.nextInt());
         Arrays.parallelSetAll(arr, (i) -> random.nextInt());
-        
+
     }
 }
