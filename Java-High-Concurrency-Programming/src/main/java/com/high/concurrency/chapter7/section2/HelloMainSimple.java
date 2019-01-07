@@ -1,4 +1,4 @@
-package com.high.concurrency.chapter7;
+package com.high.concurrency.chapter7.section2;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;

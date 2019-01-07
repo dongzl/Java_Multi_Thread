@@ -1,4 +1,4 @@
-package com.high.concurrency.chapter7;
+package com.high.concurrency.chapter7.section3;
 
 import java.util.ArrayList;
 import java.util.Collections;
