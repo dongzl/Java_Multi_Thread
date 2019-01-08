@@ -30,6 +30,11 @@
             <artifactId>akka-agent_2.11</artifactId>
             <version>2.3.9</version>
         </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-transactor_2.11</artifactId>
+            <version>2.3.8</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>Java-High-Concurrency-Programming</finalName>
