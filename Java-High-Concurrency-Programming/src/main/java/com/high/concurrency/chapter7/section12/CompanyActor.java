@@ -2,7 +2,6 @@ package com.high.concurrency.chapter7.section12;
 
 import akka.actor.UntypedActor;
 import akka.transactor.Coordinated;
-import com.sun.xml.internal.bind.v2.runtime.Coordinator;
 import scala.concurrent.stm.Ref;
 import scala.concurrent.stm.japi.STM;
 
