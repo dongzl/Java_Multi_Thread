@@ -3,7 +3,7 @@ package com.thread.updater;
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 
 /**
- * @Description
+ * @Description 测试AtomicIntegerFieldUpdater类
  * @Author dongzonglei
  * @Date 2019/01/10 下午5:17
  */
