@@ -1,4 +1,4 @@
-package com.multi.thread.guide.core.chapter2.section3;
+package com.multi.thread.guide.core.chapter2.section4;
 
 import java.io.IOException;
 import java.io.OutputStream;
