@@ -14,6 +14,12 @@ public class AtomicityExample {
         hostInfo.setPort(port);
     }
 
+    public void updateHostInfo2(String ip, int port) {
+        HostInfo hostInfo = new HostInfo();
+        hostInfo.setIp(ip);
+        hostInfo.setPort(port);
+    }
+
     public void connectToHost() {
         String ip = hostInfo.getIp();
         int port = hostInfo.getPort();
