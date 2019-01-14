@@ -33,7 +33,7 @@ public class ReadWriteLockDowngrade {
                 readLock.unlock();
             }
         } else {
-            
+
         }
     }
 }
