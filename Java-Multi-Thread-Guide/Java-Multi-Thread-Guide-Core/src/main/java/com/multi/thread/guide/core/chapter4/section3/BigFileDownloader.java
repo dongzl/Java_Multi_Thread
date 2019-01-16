@@ -2,7 +2,6 @@ package com.multi.thread.guide.core.chapter4.section3;
 
 import com.multi.thread.guide.core.Tools;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.atomic.AtomicBoolean;
 
