@@ -15,6 +15,9 @@ public class LongAccumulatorDemo {
         LongAdder addr = new LongAdder();
         addr.increment();
         System.out.println(addr.sum());
+        System.out.println(addr.intValue());
+        System.out.println(addr.sumThenReset());
+        System.out.println(addr.sum());
 
         LongAccumulator accumulator = new LongAccumulator(new LongBinaryOperator() {
             @Override
