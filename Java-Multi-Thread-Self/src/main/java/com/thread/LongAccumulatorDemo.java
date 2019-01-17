@@ -24,5 +24,10 @@ public class LongAccumulatorDemo {
         }, 0);
         accumulator.accumulate(1);
         System.out.println(accumulator.intValue());
+        System.out.println(accumulator.get());
+        System.out.println(accumulator.doubleValue());
+        System.out.println(accumulator.floatValue());
+        System.out.println(accumulator.getThenReset());
+        System.out.println(accumulator.get());
     }
 }
