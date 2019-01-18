@@ -65,7 +65,7 @@ public class AlarmAgent {
     class HeartBeartThread extends Thread {
         @Override
         public void run() {
-            try {   
+            try {
                 Thread.sleep(1000);
                 while (true) {
                     if (checkConnection()) {
