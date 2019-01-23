@@ -14,7 +14,11 @@ public class BrokenStatelessObject {
         UnsafeSingleton us = UnsafeSingleton.INSTANCE;
         int i = us.doSomething(s);
         UnsafeStatefullObject ofs = new UnsafeStatefullObject();
-        String str = ofs.doSomething(s, i);
+//        String str = ofs.doSomething(s, i);
+        String str;
+        synchronized (this) {
+            str = ofs.doSomething(s, i);
+        }
         return str;
     }
 
