@@ -1,4 +1,4 @@
-package com.multi.thread.guide.core.chapter7.section1;
+package com.multi.thread.guide.core.chapter7.section2;
 
 /**
  * @Description

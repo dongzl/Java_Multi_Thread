@@ -1,4 +1,7 @@
-package com.multi.thread.guide.core.chapter7.section1;
+package com.multi.thread.guide.core.chapter7.section2;
+
+import com.multi.thread.guide.core.chapter7.section1.AbstractPhilosopher;
+import com.multi.thread.guide.core.chapter7.section1.Chopstick;
 
 /**
  * @Description

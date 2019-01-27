@@ -1,4 +1,7 @@
-package com.multi.thread.guide.core.chapter7.section1;
+package com.multi.thread.guide.core.chapter7.section2;
+
+import com.multi.thread.guide.core.chapter7.section1.BuggyLckBasedPhilosopher;
+import com.multi.thread.guide.core.chapter7.section1.Chopstick;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
