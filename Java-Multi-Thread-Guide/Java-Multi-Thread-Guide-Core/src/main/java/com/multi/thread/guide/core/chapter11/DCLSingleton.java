@@ -25,6 +25,6 @@ public class DCLSingleton {
     }
 
     public void someService() {
-        
+
     }
 }
