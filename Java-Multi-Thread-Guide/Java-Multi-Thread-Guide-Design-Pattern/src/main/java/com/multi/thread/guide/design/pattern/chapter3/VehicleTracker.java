@@ -1,4 +1,4 @@
-package com.multi.thread.guide.design.pattern.chapter2;
+package com.multi.thread.guide.design.pattern.chapter3;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

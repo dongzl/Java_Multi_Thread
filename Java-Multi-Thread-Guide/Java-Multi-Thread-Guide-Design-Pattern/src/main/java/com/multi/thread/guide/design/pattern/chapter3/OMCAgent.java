@@ -1,4 +1,4 @@
-package com.multi.thread.guide.design.pattern.chapter2;
+package com.multi.thread.guide.design.pattern.chapter3;
 
 /**
  * @author dongzonglei
