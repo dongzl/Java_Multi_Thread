@@ -20,3 +20,7 @@
 ##### Java-Multi-Thread-Guide-Design-Pattern
 - 《Java多线程编程实战指南（设计模式篇）》源码内容
 - 作者：黄文海 / 著
+
+### Java-Concurrent-Programming-Beauty
+-《Java并发编程之美》
+- 作者：翟陆续 / 薛宾田 
