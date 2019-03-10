@@ -25,7 +25,7 @@ public class InterruptTest {
         System.out.println("main is over");
     }
 
-    public static void main(String args[]) throws Exception {
+    public static void main2(String args[]) throws Exception {
         Thread threadOne = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -43,6 +43,40 @@ public class InterruptTest {
 
         threadOne.start();
         Thread.sleep(1000);
+        threadOne.interrupt();
+        threadOne.join();
+        System.out.println("main thread is over");
+    }
+
+    public static void main3(String args[]) throws Exception {
+        Thread threadOne = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (;;) {}
+            }
+        });
+
+        threadOne.start();
+        threadOne.interrupt();
+        System.out.println("isInterrupted:" + threadOne.isInterrupted());
+        System.out.println("isInterrupted:" + threadOne.interrupted());
+        System.out.println("isInterrupted:" + Thread.interrupted());
+        System.out.println("isInterrupted:" + threadOne.isInterrupted());
+        System.out.println("main thread is over");
+    }
+
+    public static void main(String args[]) throws Exception {
+        Thread threadOne = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (!Thread.currentThread().interrupted()) {
+                    
+                }
+                System.out.println("threadOne isInterrupted:" + Thread.currentThread().isInterrupted());
+            }
+        });
+
+        threadOne.start();
         threadOne.interrupt();
         threadOne.join();
         System.out.println("main thread is over");
