@@ -48,7 +48,26 @@ public class DeadLockTest {
             }
         });
 
+        Thread threadC = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (resourceA) {
+                    System.out.println(Thread.currentThread() + " get resourceA");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(Thread.currentThread() + " waiting get resourceB");
+                    synchronized (resourceB) {
+                        System.out.println(Thread.currentThread() + " get resourceB");
+                    }
+                }
+            }
+        });
+
         threadA.start();
-        threadB.start();
+//        threadB.start();
+        threadC.start();
     }
 }
