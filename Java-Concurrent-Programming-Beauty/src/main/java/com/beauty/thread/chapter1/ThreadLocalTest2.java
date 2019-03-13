@@ -7,7 +7,7 @@ package com.beauty.thread.chapter1;
  */
 public class ThreadLocalTest2 {
 
-    public static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+    public static ThreadLocal<String> threadLocal = new InheritableThreadLocal<>();
     
     public static void main(String args[]) throws Exception {
         threadLocal.set("hello world");
