@@ -46,6 +46,7 @@ public class NonReentrantLockTest {
                         notFull.await();
                     }
                     String ele = queue.poll();
+                    System.out.println(ele);
                     notEmpty.signalAll();
                 } catch (Exception e) {
                     e.printStackTrace();
