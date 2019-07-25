@@ -1,6 +1,7 @@
 package com.multi.thread.guide.design.pattern.chapter3;
 
 /**
+ * 不可变对象
  * @author dongzonglei
  * @description
  * @date 2019-02-15 10:22
