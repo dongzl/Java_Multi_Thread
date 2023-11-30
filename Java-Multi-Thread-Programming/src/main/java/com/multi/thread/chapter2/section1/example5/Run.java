@@ -12,7 +12,7 @@ public class Run {
         ThreadA a = new ThreadA(object);
         a.setName("A");
         ThreadB b = new ThreadB(object);
-        a.setName("B");
+        b.setName("B");
         a.start();
         b.start();
     }
