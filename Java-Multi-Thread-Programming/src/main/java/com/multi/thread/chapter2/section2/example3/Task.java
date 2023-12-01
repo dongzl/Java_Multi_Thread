@@ -11,7 +11,7 @@ public class Task {
 
     private String getData2;
 
-    public synchronized void doLongTimeTask() {
+    public void doLongTimeTask() {
         try {
             System.out.println("begin task");
             Thread.sleep(3000);
